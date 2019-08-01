@@ -3,11 +3,14 @@ package com.revature.testNg;
 import static org.testng.Assert.assertEquals;
 
 import java.io.FileInputStream;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -48,13 +51,6 @@ public class WrapHomeAdvanced
 		 driver.quit();
 	  }
 	  
-//	  @Test
-//		public void dataDrivenLogin(String usernameIn, String passwordIn)
-//		{
-//			WrapHome mh = new WrapHome(driver);
-//			mh.logIntoWrap(usernameIn, passwordIn);		
-//		}
-	  
 	  @Test(groups= {"smoke"})
 	  public void confirmHomePage()
 	  {
@@ -69,6 +65,26 @@ public class WrapHomeAdvanced
 		  UserHome uh = new UserHome(driver);
 		  wh.logIntoWrap("BenTest", "asdf");
 		  assertEquals(driver.getTitle(), uh.title);
+	  }
+	  
+	  @Test
+	  public void clickThroughNavBar()
+	  {
+		  List<WebElement> elements = driver.findElements(By.xpath("//a[@id='pageLink']"));
+			for(WebElement e: elements) 
+			{
+				driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+				e.click();
+			}
+	  }
+	  
+	  @Test
+	  public void logOutOfWrap()
+	  {
+		  
+		  WrapHome wh = new WrapHome(driver);
+		  driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		  wh.logOutOfWrap();
 	  }
 	
   /*

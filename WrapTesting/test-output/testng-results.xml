@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15324" started-at="2019-08-01T12:24:00Z" finished-at="2019-08-01T12:24:15Z">
+  <suite name="Default suite" duration-ms="15535" started-at="2019-08-01T20:11:29Z" finished-at="2019-08-01T20:11:44Z">
     <groups>
       <group name="smoke">
         <method signature="WrapHomeAdvanced.confirmHomePage()[pri:0, instance:com.revature.testNg.WrapHomeAdvanced@1bce4f0a]" name="confirmHomePage" class="com.revature.testNg.WrapHomeAdvanced"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="15324" started-at="2019-08-01T12:24:00Z" finished-at="2019-08-01T12:24:15Z">
+    <test name="Default test" duration-ms="15535" started-at="2019-08-01T20:11:29Z" finished-at="2019-08-01T20:11:44Z">
       <class name="com.revature.testNg.WrapHomeAdvanced">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.revature.testNg.WrapHomeAdvanced@1bce4f0a]" name="setUp" is-config="true" duration-ms="4127" started-at="2019-08-01T12:24:00Z" finished-at="2019-08-01T12:24:04Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.revature.testNg.WrapHomeAdvanced@1bce4f0a]" name="setUp" is-config="true" duration-ms="4062" started-at="2019-08-01T20:11:29Z" finished-at="2019-08-01T20:11:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="confirmHomePage()[pri:0, instance:com.revature.testNg.WrapHomeAdvanced@1bce4f0a]" name="confirmHomePage" duration-ms="66" started-at="2019-08-01T12:24:04Z" finished-at="2019-08-01T12:24:04Z">
+        <test-method status="PASS" signature="clickThroughNavBar()[pri:0, instance:com.revature.testNg.WrapHomeAdvanced@1bce4f0a]" name="clickThroughNavBar" duration-ms="31" started-at="2019-08-01T20:11:33Z" finished-at="2019-08-01T20:11:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickThroughNavBar -->
+        <test-method status="PASS" signature="confirmHomePage()[pri:0, instance:com.revature.testNg.WrapHomeAdvanced@1bce4f0a]" name="confirmHomePage" duration-ms="45" started-at="2019-08-01T20:11:33Z" finished-at="2019-08-01T20:11:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- confirmHomePage -->
-        <test-method status="PASS" signature="logIntoWrap()[pri:0, instance:com.revature.testNg.WrapHomeAdvanced@1bce4f0a]" name="logIntoWrap" duration-ms="434" started-at="2019-08-01T12:24:04Z" finished-at="2019-08-01T12:24:04Z">
+        <test-method status="PASS" signature="logIntoWrap()[pri:0, instance:com.revature.testNg.WrapHomeAdvanced@1bce4f0a]" name="logIntoWrap" duration-ms="421" started-at="2019-08-01T20:11:33Z" finished-at="2019-08-01T20:11:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logIntoWrap -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.revature.testNg.WrapHomeAdvanced@1bce4f0a]" name="tearDown" is-config="true" duration-ms="10674" started-at="2019-08-01T12:24:04Z" finished-at="2019-08-01T12:24:15Z">
+        <test-method status="PASS" signature="logOutOfWrap()[pri:0, instance:com.revature.testNg.WrapHomeAdvanced@1bce4f0a]" name="logOutOfWrap" duration-ms="234" started-at="2019-08-01T20:11:33Z" finished-at="2019-08-01T20:11:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutOfWrap -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.revature.testNg.WrapHomeAdvanced@1bce4f0a]" name="tearDown" is-config="true" duration-ms="10711" started-at="2019-08-01T20:11:33Z" finished-at="2019-08-01T20:11:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

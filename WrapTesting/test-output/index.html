@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Ben\AppData\Local\Temp\testng-eclipse--505376953\testng-customsuite.xml</span>
+                    <span>C:\Users\Ben\AppData\Local\Temp\testng-eclipse-31277131\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.revature.testNg.WrapHomeAdvanced" hash-for-method="clickThroughNavBar">clickThroughNavBar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.revature.testNg.WrapHomeAdvanced" hash-for-method="confirmHomePage">confirmHomePage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.revature.testNg.WrapHomeAdvanced" hash-for-method="logIntoWrap">logIntoWrap</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.revature.testNg.WrapHomeAdvanced" hash-for-method="logOutOfWrap">logOutOfWrap</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -130,6 +140,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="clickThroughNavBar">
+                  </a> <!-- clickThroughNavBar -->
+                  <span class="method-name">clickThroughNavBar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="confirmHomePage">
                   </a> <!-- confirmHomePage -->
                   <span class="method-name">confirmHomePage</span>
@@ -142,12 +159,19 @@
                   <span class="method-name">logIntoWrap</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logOutOfWrap">
+                  </a> <!-- logOutOfWrap -->
+                  <span class="method-name">logOutOfWrap</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Ben\AppData\Local\Temp\testng-eclipse--505376953\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Ben\AppData\Local\Temp\testng-eclipse-31277131\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -204,20 +228,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'logIntoWrap')
 data.setCell(0, 2, 'com.revature.testNg.WrapHomeAdvanced')
-data.setCell(0, 3, 434);
+data.setCell(0, 3, 421);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'confirmHomePage')
+data.setCell(1, 1, 'logOutOfWrap')
 data.setCell(1, 2, 'com.revature.testNg.WrapHomeAdvanced')
-data.setCell(1, 3, 66);
+data.setCell(1, 3, 234);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'confirmHomePage')
+data.setCell(2, 2, 'com.revature.testNg.WrapHomeAdvanced')
+data.setCell(2, 3, 45);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'clickThroughNavBar')
+data.setCell(3, 2, 'com.revature.testNg.WrapHomeAdvanced')
+data.setCell(3, 3, 31);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 500 ms</span>
+              <span class="suite-total-time">Total running time: 731 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -249,16 +281,24 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <span class="method-name">clickThroughNavBar</span>
+                <span class="method-start">4070 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">confirmHomePage</span>
-                <span class="method-start">4135 ms</span>
+                <span class="method-start">4103 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logIntoWrap</span>
-                <span class="method-start">4205 ms</span>
+                <span class="method-start">4151 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logOutOfWrap</span>
+                <span class="method-start">4574 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4641 ms</span>
+                <span class="method-start">4809 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

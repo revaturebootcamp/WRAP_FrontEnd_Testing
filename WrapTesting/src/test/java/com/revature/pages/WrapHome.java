@@ -17,11 +17,8 @@ public class WrapHome
 	public WebElement password;
 	@FindBy(xpath="//input[@name='commit']")
 	public WebElement loginButton;
-	//there are functions that can be used with xpath -- text() is one of them -- returns the innerHTML
-//	@FindBy(xpath="//a[text()='Home']")
-//	public WebElement homeLink;
-//	@FindBy(xpath="//a[text()='SIGN-OFF']")
-//	public WebElement signOff;
+	@FindBy(xpath="//li[@id='logOut']")
+	public WebElement logOut;
 	
 	public WrapHome(WebDriver driverIn)
 	{
@@ -33,6 +30,11 @@ public class WrapHome
 		this.username.sendKeys(usernameIn);
 		this.password.sendKeys(passwordIn);
 		this.loginButton.click();
+	}
+	
+	public void logOutOfWrap()
+	{
+		this.logOut.click();
 	}
 	
 }
