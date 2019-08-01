@@ -58,17 +58,17 @@ public class WrapHomeAdvanced
 	  @Test(groups= {"smoke"})
 	  public void confirmHomePage()
 	  {
-		  WrapHome mc = new WrapHome(driver);
-		  assertEquals(driver.getTitle(), mc.title);
+		  WrapHome wh = new WrapHome(driver);
+		  assertEquals(driver.getTitle(), wh.title);
 	  }
 	  
 	  @Test
 	  public void logIntoWrap()
 	  {
-		  WrapHome mc = new WrapHome(driver);
-		  UserHome ff = new UserHome(driver);
-		  mc.logIntoWrap("BenTest", "asdf");
-		  assertEquals(driver.getTitle(), ff.title);
+		  WrapHome wh = new WrapHome(driver);
+		  UserHome uh = new UserHome(driver);
+		  wh.logIntoWrap("BenTest", "asdf");
+		  assertEquals(driver.getTitle(), uh.title);
 	  }
 	
   /*
