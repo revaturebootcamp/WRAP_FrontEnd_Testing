@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MercuryTourSuite">
+	<test name="InitialTest">
+		<classes>
+			<class name="com.revature.testNg.MercuryTours"></class>
+			<class name="com.revature.testNg.MercuryToursAdvanced"></class>
+		</classes>
+	</test>
+	<test name="AdvancedTest">
+		<groups>
+			<run>
+				<include name="setup"></include>
+				<include name="teardown"></include>
+				<include name="smoke"></include>
+				<exclude name="regression"></exclude>
+			</run>
+		</groups>
+	</test>
+</suite>

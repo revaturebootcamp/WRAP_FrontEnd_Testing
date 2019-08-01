@@ -1,0 +1,38 @@
+package com.revature.pages;
+
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class WrapHome 
+{
+	public String title = "Wrap Recipes";
+	
+	@FindBy(xpath="//input[@name='login']")
+	public WebElement username;
+	@FindBy(xpath="//input[@name='password']")
+	public WebElement password;
+	@FindBy(xpath="//input[@name='commit']")
+	public WebElement loginButton;
+	//there are functions that can be used with xpath -- text() is one of them -- returns the innerHTML
+//	@FindBy(xpath="//a[text()='Home']")
+//	public WebElement homeLink;
+//	@FindBy(xpath="//a[text()='SIGN-OFF']")
+//	public WebElement signOff;
+	
+	public WrapHome(WebDriver driverIn)
+	{
+		PageFactory.initElements(driverIn, this);
+	}
+	
+	public void logIntoWrap(String usernameIn, String passwordIn)
+	{
+		this.username.sendKeys(usernameIn);
+		this.password.sendKeys(passwordIn);
+		this.loginButton.click();
+	}
+	
+}
